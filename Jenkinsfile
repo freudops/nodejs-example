@@ -37,7 +37,7 @@ pipeline {
                 sudo docker pull freudops/nodo-todo-app-test:latest
                 sudo docker stop nodetodoapp || true
                 sudo docker rm nodetodoapp || true 
-                sudo docker run -d --name nodetodoapp freudops/nodo-todo-app-test:latest
+                sudo docker run -p 8000:8000 -d --name nodetodoapp freudops/nodo-todo-app-test:latest
                 '''
             }
         }
