@@ -4,8 +4,6 @@ sudo apt install nodejs
 
 sudo apt install npm
 
-clean
-
 npm install
 
 node app.js
