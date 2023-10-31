@@ -4,7 +4,7 @@ pipeline {
     stages{
         stage('Checkout'){
             steps{
-                git url: 'https://github.com/freudops/nodejs-example.git', branch: 'master'
+                git url: 'https://github.com/freudops/nodejs-example.git', branch: 'main'
             }
         }
         stage('Build'){
